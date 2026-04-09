@@ -51,3 +51,8 @@ bool lista_insertar_pos(ListaDL *l,int pos, void *info, size_t size) {
     if(!l) return false;
     if(lista_es_vacia(l)) 
 }
+int lista_num_nodos(ListaDL *l) {
+    int i=0;
+    for(Nodo *tmp = l->head; tmp !=NULL; tmp= tmp->sig, i++);
+    return i;
+}

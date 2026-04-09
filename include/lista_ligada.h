@@ -11,6 +11,7 @@ bool ListaDL_insertar_inicio(ListaDL *l, void *info, size_t size);
 bool ListaDL_insertar_fin(ListaDL *l, void *info, size_t size);
 bool ListaDL_insertar_fin(ListaDL *l,int pos, void *info, size_t size);
 bool ListaDL_es_vacia(ListaDL *l);
+int lista_num_nodos(ListaDL *l);
 
 #endif
 
