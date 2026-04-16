@@ -6,9 +6,9 @@
 #include <stdbool.h>
 
 typedef struct Nodo {
-    Nodo *info;
-    Nodo *sig;
-    Nodo *ant;
+    struct Nodo *info;
+    struct Nodo *sig;
+    struct Nodo *ant;
 
 } Nodo;
 Nodo *nodo_crear(void *info, size_t size);

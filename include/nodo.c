@@ -1,7 +1,5 @@
 #include 'nodo.h'
 
-
-
 Nodo *nodo_crear(void *info, size_t size) {
     Nodo *new=(Nodo*)malloc(sizeof(Nodo));
     new->info=malloc(size);
@@ -13,10 +11,9 @@ Nodo *nodo_crear(void *info, size_t size) {
 }
 
 void nodo_eliminar(Nodo *n) {
-    if(n!=NULL) {
-        if(n->sig==NULL && n->ant=NULL) {
-            free(n);
-        }
+    if(n != NULL) {
+        if(n->info != NULL) free(n->info); 
+        free(n);
     }else {
         printf("El nodo no existe\n");
     }
